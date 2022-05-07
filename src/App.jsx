@@ -1,6 +1,7 @@
 import Wrapper from "./components/Wrapper"
 import Screen from "./components/Screen"
 import ButtonsBox from "./components/ButtonsBox"
+import Button from "./components/Button"
 
 const App = () =>{
     return (
@@ -8,7 +9,14 @@ const App = () =>{
             <Wrapper>
                 <Screen value="0"/>
                 <ButtonsBox>
-                    aqui botones
+                    <Button 
+                        className=""
+                        value ="0"
+                        onClick={()=>{
+                            console.log("Button clicker")
+                        }}
+    
+                    />
                 </ButtonsBox>
             </Wrapper>
         </div>
