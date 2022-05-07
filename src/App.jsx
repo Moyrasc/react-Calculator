@@ -1,7 +1,11 @@
+import Wrapper from "./components/Wrapper"
+
 const App = () =>{
     return (
         <div className="App">
-            <h1>App</h1>
+            <Wrapper>
+                Hola mundo
+            </Wrapper>
         </div>
     )
 
