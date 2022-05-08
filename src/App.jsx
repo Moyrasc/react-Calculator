@@ -93,6 +93,14 @@ const App = () =>{
             sing:"",
         })
     }
+    const resetClickHandler = () => {
+        setCalc({
+            ...calc,
+            sign:"",
+            num:0,
+            res:0,
+        })
+    }
    
     
 
