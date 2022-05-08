@@ -54,6 +54,27 @@ const App = () =>{
             num:0,
         })
     }
+    const equalsClickHandler = () =>{
+        if(calc.sing && calc.num){
+            const math = (a,b,sing) =>
+            sing === "+"
+            ? a + b
+            : sing === "-"
+            ? a - b
+            : sing === "X"
+            ? a * b
+            : a / b;
+        setCalc({
+            ...calc,
+            res:
+            calc.num === "0" && calc.sing === "/"
+            ? "Can´t divide with 0"
+            : math(Number(calc.res),Number(calc.num), calc.sing),
+            sing:"",
+            num:0,
+        })    
+        }
+    }
    
     
 
